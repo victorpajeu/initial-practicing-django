@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # External Library
+    'widget_tweaks',
+    # Internal Library
     'commons',
     'doctors',
     'accounts',
