@@ -13,6 +13,12 @@
     {% render_field form.cpf %}
     {% render_field form.crm %}
     <button type="submit">Salvar</button>
+    <hr>
+    {% for doctor in doctors %}
+    <p>{{ doctor.name }}</p>
+    {% empty %}
+    <p> Não tem nenhum médico cadastrado! </p>
+    {% endfor %}
 </form>
 </body>
 </html>
